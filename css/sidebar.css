@@ -1,0 +1,121 @@
+:root {
+  --white-color: #fff;
+  --primary-color: #6f0dbf;
+  --black-color: #2424242;
+  --font-us: 'Poppins', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+img {
+  width: 100%;
+}
+.underline {
+  color: #d4cccb;
+  width: 100%;
+  height: 2px;
+}
+.sidebar {
+  box-shadow: 2px 2px 2px #242424;
+  background-color: #ed7505;
+  width: 350px;
+  height: 1000px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease-in;
+  transform: translateX(400px);
+}
+
+.sidebar .clip-it span {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 0;
+  color: #f5f3f2;
+}
+.sidebar .clip-it span .close-side {
+  width: 100%;
+  height: 100%;
+}
+.sidebar.active {
+  transform: translateX(0);
+}
+
+/* sidebar profile*/
+.sidebar .clip-it .sidebar-profile {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .clip-it .sidebar-profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 5px 0;
+  border: 2px solid var(--white-color);
+}
+.sidebar .clip-it .sidebar-profile h3 {
+  font-size: 22px;
+  font-family: var(--font-us);
+  font-weight: 400;
+  margin: 5px 0;
+  color: var(--white-color);
+}
+.sidebar .clip-it .sidebar-profile p {
+  font-family: var(--font-us);
+  color: var(--white-color);
+  font-size: 14px;
+}
+.sidebar .clip-it .underline {
+  background-color: #f5f3f2;
+  width: 100%;
+  height: 2px;
+}
+/*sidebar ratio*/
+.sidebar .clip-it .sidebar-ratio {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sidebar .clip-it .sidebar-ratio .sidebar-ratio-numbers {
+  font-family: var(--font-us);
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  color: var(--white-color);
+}
+/*sidebar buttons*/
+.sidebar .clip-it .sidebar-buttons .btn-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white-color);
+  transition: all 0.1s;
+  font-family: var(--font-us);
+}
+.sidebar .clip-it .sidebar-buttons .btn-side.active {
+  border-right: 5px solid yellow;
+}
+.sidebar .clip-it .sidebar-buttons .btn-side:hover {
+  background-color: #d4cccb;
+  color: #242424;
+}
